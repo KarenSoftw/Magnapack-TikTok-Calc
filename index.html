@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnapack | TikTok Profit Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-card">
+        <img src="imagenes/magnapack.jpg" class="brand-logo" alt="Magnapack Logo">
+
+        <h1>📦 Calculator 📦</h1>
+        <p>Analyze your TikTok Bundle profitability</p>
+        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+
+        <label for="materialCost">Material Cost ($)</label>
+        <input type="number" id="materialCost" placeholder="What you paid">
+
+        <label for="salePrice">TikTok Sale Price ($)</label>
+        <input type="number" id="salePrice" placeholder="Final price for client">
+        
+        <label for="shippingCost">Shipping Expense ($)</label>
+        <input type="number" id="shippingCost" placeholder="Delivery cost">
+
+        <button onclick="calculateProfit()">Calculate Net Profit</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

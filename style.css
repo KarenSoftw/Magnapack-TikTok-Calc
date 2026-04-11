@@ -1,0 +1,114 @@
+/* --- GLOBAL STYLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Deep Navy Blue background to match your brand */
+    background-color: #003049; 
+    font-family: 'Arial Black', 'Arial Bold', sans-serif; /* Heavy, bold fonts */
+    display: flex;
+    flex-direction: column; /* Stack logo and card vertically */
+    justify-content: flex-start; 
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* --- THE MASSIVE LOGO --- */
+.brand-logo {
+    display: block;
+    width: 100%;          /* Ocupa el ancho del contenedor */
+    max-width: 350px;     /* Ajusté este valor para que no tape todo */
+    height: auto;
+    margin: 0 auto 20px auto; /* Centrado y con espacio abajo */
+    filter: drop-shadow(0px 8px 15px rgba(0,0,0,0.2));
+}
+
+/* --- THE CALCULATOR CARD --- */
+.calculator-card {
+    background: #ffffff;
+    padding: 30px;        /* Un poco menos de espacio interno arriba */
+    border-radius: 24px;
+    width: 90%;           /* Para que respire en celulares */
+    max-width: 480px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    text-align: center;
+    margin-top: 20px;     /* Espacio extra arriba de la tarjeta */
+}
+
+/* --- TITLES & TEXT --- */
+h1 {
+    font-size: 32px;
+    color: #003049;
+    font-weight: 900;      /* Super Bold */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+p {
+    font-family: 'Segoe UI', sans-serif; /* Normal font for contrast */
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+/* --- FORM ELEMENTS --- */
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 900;      /* Bold labels */
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 25px;
+    border: 2px solid #eee; /* Thicker borders */
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    outline: none;
+    border-color: #fcbf49; /* Yellow highlight from your logo */
+}
+
+/* --- THE ACTION BUTTON --- */
+button {
+    width: 100%;
+    padding: 20px;
+    background-color: #d62828; /* Strong Red */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #a82020;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* --- RESULTS --- */
+.result {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #003049;
+}
